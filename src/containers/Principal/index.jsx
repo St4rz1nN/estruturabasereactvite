@@ -1,5 +1,6 @@
 import {Container, Text} from './styles'
 import IncrementoDecremento from '../../components/IncrementoDecremento';
+import { useState } from 'react';
 
 
 function Principal(){
@@ -25,8 +26,8 @@ function Principal(){
             </Text>
             <IncrementoDecremento
                 numeroInicial={numero}
-                botaoDireito={incrementarNumero()}
-                botaoEsquerdo={decrementarNumero()}
+                botaoDireito={incrementarNumero}
+                botaoEsquerdo={decrementarNumero}
 
             />
         </Container>

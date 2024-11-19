@@ -1,24 +1,19 @@
 import {Container, Text, Botao} from './styles'
 
 
-const props = {
-    numeroInicial,
-    botaoDireita,
-    botaoEsquerda,
-}
+function IncrementoDecremento ({ numeroInicial, botaoDireito, botaoEsquerdo }) {
 
 
-function IncrementoDecremento (props) {
 
 
     return (
 
         <Container>
-            <Botao>
+            <Botao onClick={botaoDireito}>
                 +
             </Botao>
-            <Text>0</Text>
-            <Botao>
+            <Text>{numeroInicial}</Text>
+            <Botao onClick={botaoEsquerdo}>
                 -
             </Botao>
         </Container>

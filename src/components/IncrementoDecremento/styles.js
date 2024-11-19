@@ -14,7 +14,7 @@ export const Text = styled.label `
     font-size: 10px;
 `
 
-export const botao = styled.button`
+export const Botao = styled.button`
     background-color: white;
     border: 1px solid black;
     border-radius: 2px;
