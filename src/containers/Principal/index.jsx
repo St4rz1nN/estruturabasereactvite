@@ -1,4 +1,4 @@
-import {Container, Text} from './styles'
+import {Container, Text, Botao} from './styles'
 import IncrementoDecremento from '../../components/IncrementoDecremento';
 import { useState } from 'react';
 
@@ -6,6 +6,21 @@ import { useState } from 'react';
 function Principal(){
 
     const [numero, setNumero] = useState(0);
+
+
+    const campos = (
+        {
+            tipo= "label",
+            texto= "Tester"
+        },
+        {
+            tipo= "input"
+            
+        },
+
+    )
+
+
 
     const incrementarNumero = () => {  
         setNumero(numero+1)
@@ -30,6 +45,11 @@ function Principal(){
                 botaoEsquerdo={decrementarNumero}
 
             />
+
+            <Botao>
+                Modal Tester
+            </Botao>
+
         </Container>
     )
 }
